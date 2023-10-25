@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   icons: {
     icon: "/p81S2Dt1.png",
   },
+  openGraph: {
+    images:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Gfel-AapoSZTh5Lnp4WWv4lypUWN7wbqZg&usqp=CAU",
+  },
 };
 
 export default function RootLayout({
