@@ -32,7 +32,7 @@ export default function Header() {
         <MenuMobile isOpen={isOpen} toggleOpen={toggleOpen} />
         {isOpen && (
           <div className="fixed  inset-0 bg-white flex  justify-end p-5 ">
-            <div className="flex flex-col">
+            <div className="flex flex-col ">
               <MenuMobile isOpen={isOpen} toggleOpen={toggleOpen} />
               <div>
                 {Object.entries(navItems).map(([path, { name }]) => {
@@ -65,7 +65,7 @@ export default function Header() {
         )}
       </div>
       <aside className="-ml-[8px]  tracking-tight ">
-        <div className="flex justify-between fixed  top-0 left-0 right-0 h-20 bg-gray-50  ">
+        <div className="flex justify-between fixed  top-0 left-0 right-0 h-20 bg-white  z-30 ">
           <LayoutGroup>
             <nav
               className="flex flex-row item-center justify-between px-5 md:px-20 pb-0 w-full"

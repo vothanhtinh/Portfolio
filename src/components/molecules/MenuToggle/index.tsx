@@ -49,14 +49,15 @@ export default function MenuMobile({ isOpen, toggleOpen }: TMenuMobile) {
   const { height } = useDimensions(containerRef);
 
   return (
-    <motion.nav
+    <motion.div
       initial={false}
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
+      className="flex justify-end"
     >
       <motion.div className="background" />
       <MenuToggle toggle={() => toggleOpen()} />
-    </motion.nav>
+    </motion.div>
   );
 }
