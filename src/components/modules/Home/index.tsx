@@ -65,8 +65,8 @@ export default function Home() {
         <Image
           src={"/home-right.png.webp"}
           alt="home-right"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className="w-full"
         />
       </div>

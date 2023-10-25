@@ -5,7 +5,12 @@ export default function Skills() {
     <section className="flex min-h-full  flex-col md:flex-row justify-center  mt-10">
       <div className="flex-1">
         <h2 className="text-center text-3xl font-bold">Technical Skills</h2>
-        <div className="grid grid-cols-3 gap-7 mt-10">
+        <div
+          className="grid grid-cols-3 gap-7 mt-10"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
           <div className="flex justify-center rounded-full ">
             <div className="flex justify-center flex-col gap-2">
               <div className="flex justify-center items-center">
@@ -134,9 +139,14 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      <div className="flex-1 justify-center mt-10 md:mt-0 ">
+      <div className="flex-1 justify-center mt-10 md:mt-0  ">
         <h2 className="text-3xl font-bold text-center">Soft Skills</h2>
-        <div className="flex flex-col gap-7 mt-10 ">
+        <div
+          className="flex flex-col gap-7 mt-10 "
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
           <div className="flex justify-center flex-col gap-2 rounded-full">
             <div className="flex justify-center">
               <Image

@@ -11,7 +11,7 @@ import Information from "../Infomation";
 export default function HOMEPAGE() {
   return (
     <>
-      <Fullpage>
+      <Fullpage className="h-auto">
         <FullpageNavigation />
         <FullPageSections className="mt-24">
           <FullpageSection>
