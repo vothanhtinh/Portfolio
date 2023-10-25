@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <aside className="-ml-[8px]  tracking-tight ">
-      <div className="lg:sticky lg:top-20 ">
+      <div className="lg:sticky  ">
         <LayoutGroup>
           <nav
             className="flex flex-row item-center justify-between relative px-20 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"

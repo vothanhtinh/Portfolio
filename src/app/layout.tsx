@@ -20,11 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en">
       <AOSInit />
       <body className={inter.className}>
-        <Header />
-        <div className="container mx-auto px-5 pt-5">{children}</div>
+        <div className="max-w-screen-2xl mx-auto">
+          <Header />
+          <div className="">{children}</div>
+        </div>
       </body>
     </html>
   );
