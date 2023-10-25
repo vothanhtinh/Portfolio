@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Tilt_Neon } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import { AOSInit } from "@/components/Aos";
+import { AOSInit } from "@/configs/Aos";
 
 const inter = Tilt_Neon({ weight: "400", subsets: ["latin"], display: "swap" });
 

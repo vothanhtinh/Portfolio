@@ -25,10 +25,10 @@ export default function Header() {
 
   return (
     <aside className="-ml-[8px]  tracking-tight ">
-      <div className="lg:sticky  ">
+      <div className="fixed top-0 left-0 right-0 h-20 bg-gray-50  ">
         <LayoutGroup>
           <nav
-            className="flex flex-row item-center justify-between relative px-20 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+            className="flex flex-row item-center justify-between  px-20 pb-0 "
             id="nav"
           >
             <div>

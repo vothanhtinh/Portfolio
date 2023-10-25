@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="flex justify-between flex-col-reverse  md:flex-row px-20 pt-10 ">
+    <section className="flex justify-between flex-col-reverse  md:flex-row sm:px-5 md:px-20 pt-10 mt-10 ">
       <div className="flex flex-col gap-4">
         <div
           data-aos="fade-up"
@@ -61,16 +61,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50">
         <Image
           src={"/home-right.png.webp"}
           alt="home-right"

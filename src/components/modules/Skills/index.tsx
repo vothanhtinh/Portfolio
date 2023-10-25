@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <section className="flex min-h-full  flex-col md:flex-row justify-center mt-10">
+    <section className="flex min-h-full  flex-col md:flex-row justify-center  mt-10">
       <div className="flex-1">
         <h2 className="text-center text-3xl font-bold">Technical Skills</h2>
         <div className="grid grid-cols-3 gap-7 mt-10">
