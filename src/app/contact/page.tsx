@@ -16,8 +16,8 @@ export default function Contact() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
-              duration: 0.5,
-              delay: i / 10,
+              duration: 0.9,
+              delay: i / 5,
             }}
             key={i}
             className="text-4xl text-center text-white"

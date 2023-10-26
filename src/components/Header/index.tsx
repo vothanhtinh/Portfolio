@@ -9,16 +9,10 @@ import MenuMobile, { MenuToggle } from "../molecules/MenuToggle";
 
 const navItems = {
   "/": {
-    name: "Home",
-  },
-  "/about": {
-    name: "About",
-  },
-  "/skill": {
-    name: "Skill",
+    name: "HOME",
   },
   "/contact": {
-    name: "Contact",
+    name: "CONTACT",
   },
 };
 
