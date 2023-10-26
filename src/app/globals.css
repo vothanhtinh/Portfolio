@@ -17,5 +17,7 @@
 }
 
 body {
-  
+  .ant-input{
+      width: 100% !important;
+  }
 }
