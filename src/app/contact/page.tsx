@@ -1,17 +1,30 @@
 "use client";
+
 import { MailOutlined, PhoneOutlined } from "@ant-design/icons";
 import { Input } from "antd";
-import TextArea from "antd/es/input/TextArea";
-import { useState } from "react";
 import { motion } from "framer-motion";
+import TextAreaComp from "@/components/atoms/TextArea";
 
 export default function Contact() {
-  const [value, setValue] = useState("");
+  const text = "CONTACT ".split("");
 
   return (
     <div className="mb-20">
       <div className=" h-72 bg-blue-400 flex justify-center items-center">
-        <div className="text-4xl text-center text-white">Contact Me</div>
+        {text.map((el, i) => (
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.5,
+              delay: i / 10,
+            }}
+            key={i}
+            className="text-4xl text-center text-white"
+          >
+            {el}
+          </motion.span>
+        ))}
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-10 mt-10 px-5 md:px-20">
         <div className="w-full flex flex-col gap-5">
@@ -34,14 +47,7 @@ export default function Contact() {
           <Input placeholder="Enter your email" style={{ height: "40px" }} />
         </div>
         <div className="w-full ">
-          <div>
-            <TextArea
-              value={value}
-              onChange={(e) => setValue(e.target.value)}
-              placeholder="Enter message"
-              autoSize={{ minRows: 5, maxRows: 7 }}
-            />
-          </div>
+          <TextAreaComp />
           <div>
             <motion.button
               whileTap={{ scale: 0.7 }}
